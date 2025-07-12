@@ -6,6 +6,3 @@
 a.active{
     background-color: yellowgreen;
 }
-.cards{
-    transition-delay: 3s;
-}
