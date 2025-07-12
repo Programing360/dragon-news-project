@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import icon from '../assets/user.png'
-import Login from '../component/Catagory/login';
 import { AuthProvider } from '../FireBaseAuth/FireBaseAuth';
 const NavBar = () => {
     const { user,userSignOut } = useContext(AuthProvider)
@@ -17,7 +16,7 @@ const NavBar = () => {
 
         <div className="container flex justify-between items-center w-11/12 py-4 mx-auto">
             <div>
-                {/* <Login></Login> */}
+                
             </div>
             <div className='space-x-3'>
                 <NavLink to='/'>Home</NavLink>
