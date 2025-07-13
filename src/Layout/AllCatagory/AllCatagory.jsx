@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import Sports from '../Sports/Sports';
 
 const AllCatagory = () => {
 
@@ -11,7 +12,7 @@ const AllCatagory = () => {
             .then(catagoryBtn => setCatagory(catagoryBtn.data.news_category))
     }, [])
     return (
-        <div>
+        <div className='flex flex-col'>
             <h1 className="font-semibold">All Catagory {Catagory.length}</h1>
             <div>
                 {
@@ -20,6 +21,7 @@ const AllCatagory = () => {
                     )
                 }
             </div>
+            <Sports></Sports>
         </div>
     );
 };

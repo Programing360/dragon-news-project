@@ -3,10 +3,11 @@ import { Link, NavLink } from 'react-router-dom';
 import icon from '../assets/user.png'
 import { AuthProvider } from '../FireBaseAuth/FireBaseAuth';
 const NavBar = () => {
-    const { user,userSignOut } = useContext(AuthProvider)
+    const { user,userSignOut,deleteUserId } = useContext(AuthProvider)
     console.log(user?.photoURL)
     const handleSignOut = () => {
         userSignOut()
+        deleteUserId()
         .then(res => {
             console.log(res)
         })
