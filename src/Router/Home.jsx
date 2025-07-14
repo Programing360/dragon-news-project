@@ -12,7 +12,7 @@ const Home = () => {
             <p>
                 {time}
             </p>
-            <div className='flex items-center bg-gray-300 p-2 gap-2'>
+            <div className='flex items-center w-[400px] md:w-[750px] lg:w-full  bg-gray-300 p-2 gap-2'>
                 <button className='btn bg-amber-600'>Latest</button>
                 <Marquee speed={100}>
                     <Link to="/">

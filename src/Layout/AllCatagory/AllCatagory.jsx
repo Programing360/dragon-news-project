@@ -12,16 +12,18 @@ const AllCatagory = () => {
             .then(catagoryBtn => setCatagory(catagoryBtn.data.news_category))
     }, [])
     return (
-        <div className='flex flex-col'>
+        <div className=''>
             <h1 className="font-semibold">All Catagory {Catagory.length}</h1>
-            <div>
+            <div className=''>
                 {
                     Catagory.map(singleCategory =>
                         <NavLink to={`/category/${singleCategory.category_id}`} key={singleCategory.category_id} className='btn bg-gray-100 my-3 w-full flex items-center' >{singleCategory.category_name}</NavLink>
                     )
                 }
             </div>
-            <Sports></Sports>
+            <div className='hidden md:inline'>
+                <Sports></Sports>
+            </div>
         </div>
     );
 };

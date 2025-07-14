@@ -16,7 +16,7 @@ const Sports = () => {
         <div>
             <h1 className='font-bold'>Sports</h1>
             {
-                sport.map(sport => <div className="card bg-base-100 shadow-sm mt-4">
+                sport.map(sport => <div className="card bg-base-100 shadow-sm mt-4 ">
                     <figure className="px-2 pt-3">
                         <img
                             src={sport.image_url}
