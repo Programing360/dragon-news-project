@@ -15,7 +15,7 @@ const NewsDetails = () => {
         <>
             <Home></Home>
             <div className='w-11/12 container mx-auto grid grid-cols-12 gap-4 my-8'>
-                <section className='col-span-9'>
+                <section className='col-span-full md:col-span-9'>
                     {
                         data.map((data,i) => <div key={i} className="card bg-base-100  shadow-sm">
                             <figure className="px-10 pt-10">
@@ -34,7 +34,7 @@ const NewsDetails = () => {
                         </div>)
                     }
                 </section>
-                <aside className='col-span-3'>
+                <aside className='col-span-3 hidden md:inline'>
                     <Login></Login>
                     <FindUs></FindUs>
                 </aside>

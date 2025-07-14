@@ -9,14 +9,16 @@ import { Outlet } from 'react-router-dom';
 const Root = () => {
     
     return (
-        <div>
-           <Home></Home>
+        <div className=''>
+           <div className=''>
+            <Home></Home>
            <NavBar></NavBar>
+           </div>
            <section className='container grid lg:grid-cols-12 md:grid-cols-12 w-11/12 mx-auto py-3'>
                 <aside className='lg:col-span-3 md:col-span-3'>
                     <AllCatagory></AllCatagory>
                 </aside>
-                <section className='lg:col-span-6 md:col-span-6 space-y-3 mx-3'>
+                <section className='lg:col-span-6 md:col-span-6 space-y-3 mx-3 h-[2000px]  overflow-scroll'>
                     <News></News>
                     <Outlet></Outlet>
                 </section>
